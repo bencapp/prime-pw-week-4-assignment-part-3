@@ -57,3 +57,23 @@ addItem("oat milk");
 console.log(
   `Added 5 items to the basket. isFull should return true: ${isFull()}`
 );
+console.log(`Basket is now ${basket}`);
+
+function removeItem(item) {
+  let index = basket.indexOf(item);
+  if (index >= 0) {
+    return basket.splice(index, 1);
+  } else {
+    return null;
+  }
+}
+
+removeItem("potatoes");
+
+console.log(`Removed potatoes. Basket is now ${basket}`);
+
+console.log(
+  `Attempting to remove cherries. Return value should be null: ${removeItem(
+    "cherries"
+  )}`
+);
