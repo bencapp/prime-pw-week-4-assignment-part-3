@@ -17,3 +17,20 @@ function listItems() {
 function empty() {
   basket = [];
 }
+
+addItem("berries");
+addItem("apple");
+addItem("banana");
+addItem("cereal");
+
+console.log(`Added items. Basket is ${basket}`);
+
+addItem("raisins");
+
+console.log(`Added raisins. Basket is now ${basket}`);
+
+console.log("Checking listItems function:");
+listItems();
+
+empty();
+console.log(`Emptied basket. Basket is now ${basket}`);
