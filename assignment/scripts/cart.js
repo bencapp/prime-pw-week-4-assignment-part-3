@@ -34,3 +34,26 @@ listItems();
 
 empty();
 console.log(`Emptied basket. Basket is now ${basket}`);
+
+//Stretch goals completed below
+
+const maxItems = 5;
+
+function isFull() {
+  if (basket.length < 5) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+//testing isFull function
+addItem("oranges");
+addItem("yams");
+addItem("potatoes");
+addItem("soda");
+addItem("oat milk");
+
+console.log(
+  `Added 5 items to the basket. isFull should return true: ${isFull()}`
+);
